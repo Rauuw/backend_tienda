@@ -97,4 +97,9 @@ public class ProductoController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
         }
     }
+
+    @GetMapping("/hola_mundo")
+    public String holaMundo() {
+        return "Hola Mundo";
+    }
 }
